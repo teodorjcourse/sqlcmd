@@ -1,0 +1,295 @@
+# Application texts
+
+#
+# ========================== command descriptions ==========================
+#
+lang_desc:
+  ru: "\t - Команда \"{0}\" меняет язык интерфейса.
+  %n\t\tФормат команды: \"{1}\", где:
+  %n\t\t\t - {2} - язык интерфейса.
+  %n\t\t\t - Список доступных языков: {3}%n"
+  en: "\t - Command \"{0}\" changes interface language.
+  %n\t\tCommand format: \"{1}\", where:
+  %n\t\t\t - {2} - interface language.
+  %n\t\t\t - List of available languages: {3}%n"
+
+open_connection_desc:
+  ru: "\t - Команда \"{0}\" устанавливает соединение с сервером БД.
+  %n\t\tФормат команды: \"{1}\", где:
+  %n\t\t\t - {2} - имя пользователя
+  %n\t\t\t - {3} - пароль пользователя%n"
+  en: "\t - Command \"{0}\" sets connection with database server.
+  %n\t\tCommand format: \"{1}\", where:
+  %n\t\t\t - {2} – user name
+  %n\t\t\t - {3} - userpassword%n"
+
+close_connection_desc:
+  ru: "\t - Команда \"{0}\" закрывает соединение с сервером БД.
+  %n\t\tФормат команды: \"{1}\" (без параметров)%n"
+  en: "\t - Command \"{0}\" closes connection with database server.
+  %n\t\tCommand format: \"{1}\" (without parameters)%n"
+
+create_db_desc:
+  ru: "\t - Команда \"{0}\" создает новую базу данных.
+  %n\t\tФормат команды: \"{1}\", где:
+  %n\t\t\t - {2} - имя базы данных%n"
+  en: "\t - Command \"{0}\" creates new database.
+  %n\t\tCommand format: \"{1}\", where:
+  %n\t\t\t - {2} – databse name%n"
+
+drop_db_desc:
+  ru: "\t - Команда \"{0}\" удаляет указанную базу данных.
+  %n\t\tФормат: \"{1}\", где
+  %n\t\t\t - {2} - имя удаляемой базы данных%n"
+  en: "\t - Command \"{0}\" deletes indicated database.
+  %n\t\tFormat: \"{1}\", where
+  %n\t\t\t - {2} - name of the database to be deleted%n"
+
+connect_desc:
+  ru: "\t - Команда \"{0}\" подключает приложение к соответствующей БД.
+  %n\t\tФормат команды: \"{1}\", где:
+  %n\t\t\t - {2} - имя
+  %n\t\t\t - {3} - имя пользователя
+  %n\t\t\t - {4} - пароль пользователя%n"
+  en: "\t - Command \"{0}\" connects application with the appropriate database.
+  %n\t\tCommand format: \"{1}\", where:
+  %n\t\t\t - {2} – name
+  %n\t\t\t - {3} – user name
+  %n\t\t\t - {4} - userpassword%n"
+
+create_desc:
+  ru: "\t - Команда \"{0}\" создает новую таблицу с заданными полями.
+  %n\t\tФормат команды: \"{1}\", где:
+  %n\t\t\t - {2} - имя таблицы
+  %n\t\t\t - {3} - имя первого столбца записи (не обязятельный параметр)
+  %n\t\t\t - {4} - имя второго столбца записи (не обязятельный параметр)
+  %n\t\t\t   {5}
+  %n\t\t\t - {6} - имя n-го столбца записи (не обязятельный параметр)%n"
+  en: "\t - Command \"{0}\" creates new table with specified fields.
+  %n\t\tCommand format: \"{1}\", where:
+  %n\t\t\t - {2} – table name
+  %n\t\t\t - {3} – name of the first column of the record (not necessary parameter)
+  %n\t\t\t - {4} - name of the second column of the record (not necessary parameter)
+  %n\t\t\t   {5}
+  %n\t\t\t - {6} – name of a certaincolumn of the record(not necessary parameter)%n"
+
+clear_desc:
+  ru: "\t - Команда \"{0}\" очищает содержимое указанной (всей) таблицы.
+  %n\t\tФормат: \"{1}\", где
+  %n\t\t\t - {2} - имя очищаемой таблицы%n"
+  en: "\t Command \"{0}\" deletes content of indicated (whole) table.
+  %n\t\tCommand format: \"{1}\", where
+  %n\t\t\t - {2} – name of the table to be deleted%n"
+
+drop_desc:
+  ru: "\t - Команда \"{0}\" удаляет указанную таблицу.
+  %n\t\tФормат: \"{1}\", где
+  %n\t\t\t - {2} - имя удаляемой таблицы%n"
+  en: "\t - Command \"{0}\" deletes indicated table.
+  %n\t\tFormat: \"{1}\", where
+  %n\t\t\t - {2} - name of the table to be deleted%n"
+
+tables_desc:
+  ru: "\t - Команда \"{0}\" выводит список всех таблиц.
+  %n\t\tФормат: \"{1}\" (без параметров)%n"
+  en: "\t - Command \"{0}\" list all the tables.
+  %n\t\tFormat: \"{1}\" (without parameters)%n"
+
+insert_desc:
+  ru: "\t - Команда \"{0}\" вставляет строку в заданную таблицу.
+  %n\t\tФормат команды: \"{1}\", где:
+  %n\t\t\t - {2} - имя таблицы
+  %n\t\t\t - {3} - имя первого столбца записи
+  %n\t\t\t - {4} - значение первого столбца записи
+  %n\t\t\t - {5} - имя второго столбца записи
+  %n\t\t\t - {6} - значение второго столбца записи
+  %n\t\t\t   {7}
+  %n\t\t\t - {8} - имя n-го столбца записи
+  %n\t\t\t - {9} - значение n-го столбца записи%n"
+  en: "\t - Command \"{0}\" paste a row into indicated table.
+  %n\t\tCommand format: \"{1}\", where:
+  %n\t\t\t - {2} –table name
+  %n\t\t\t - {3} - name of the first column of the record
+  %n\t\t\t - {4} – value of the first column of the record
+  %n\t\t\t - {5} - name of the second column of the record
+  %n\t\t\t - {6} - value of the second column of the record
+  %n\t\t\t   {7}
+  %n\t\t\t - {8} – name of thea certain column of the record
+  %n\t\t\t - {9} - value of the a certain column of the record%n"
+
+update_desc:
+  ru: "\t - Команда \"{0}\" обновит запись, установив значение column2 = value2,
+  для которой соблюдается условие column1 = value1.
+  %n\t\tФормат команды: \"{1}\", где:
+  %n\t\t\t - {2} - имя таблицы
+  %n\t\t\t - {3} - имя столбца записи которое проверяется
+  %n\t\t\t - {4} - значение которому должен соответствовать столбец column1 для обновляемой записи
+  %n\t\t\t - {5} - имя обновляемого столбца записи
+  %n\t\t\t - {6} - значение обновляемого столбца записи
+  %n\t\t\t   {7}
+  %n\t\t\t - {8} - имя n-го обновляемого столбца записи
+  %n\t\t\t - {9} - значение n-го обновляемого столбца записи%n"
+  en: "\t - Command \"{0}\" will renew the record having set the value column2 = value2,
+  provided that column1 = value1.
+  %n\t\tCommand format: \"{1}\", where:
+  %n\t\t\t - {2} – table name
+  %n\t\t\t - {3} – name of the record's column under check
+  %n\t\t\t - {4} – value of the corresponding column column1 for the updated record
+  %n\t\t\t - {5} – name of the record's column to be updated
+  %n\t\t\t - {6} – value of the column to be updated
+  %n\t\t\t   {7}
+  %n\t\t\t - {8} - name of a certainrecord's column to be updated
+  %n\t\t\t - {9} - value of a certain column to be updated%n"
+
+delete_desc:
+  ru: "\t - Команда \"{0}\" удаляет одну или несколько записей для которых соблюдается условие column = value
+  %n\t\tФормат команды: \"{1}\", где:
+  %n\t\t\t - {2} - имя таблицы
+  %n\t\t\t - {3} - имя столбца записи, которое проверяется
+  %n\t\t\t - {4} - значение, которому должен соответствовать столбец {3} для удаляемой записи%n"
+  en: "\t - Command \"{0}\" deletes one or several records provided thatcolumn = value
+  %n\t\tCommand format: \"{1}\", where:
+  %n\t\t\t - {2} – table name
+  %n\t\t\t - {3} - name of the record's column under check
+  %n\t\t\t - {4} – value of the corresponding column {3} for the record to be deleted%n"
+
+find_desc:
+  ru: "\t - Команда \"{0}\" выводит содержимое указанной таблицы.
+  %n\t\tФормат: \"{1}\", где
+  %n\t\t\t - {2} - имя очищаемой таблицы%n"
+  en: "\t - Command \"{0}\" outputs the content of the specified table.
+  %n\t\tFormat: \"{1}\", where
+  %n\t\t\t - {2} – name of the table to be truncated%n"
+
+exit_desc:
+ ru: "\t - Команда \"{0}\" отключает от БД и завершает приложение.
+ %n\t\tФормат: \"{1}\" (без параметров)%n"
+ en: "\t - Command \"{0}\" closes connection the databaseterminatesthe application.
+ %n\t\tFormat: \"{1}\" (without parameters)%n"
+
+help_desc:
+  ru: "\t - Команда \"{0}\" выводит в консоль список всех доступных команд.
+  %n\t\tФормат:
+  %n\t\t\t - \"{0}\" (без параметров) - выведет полный список команд с подробным описанием
+  %n\t\t\t - \"{0}\ | list - выведет список имено доступных команд
+  %n\t\t\t - \"{0}\ | <command_name> - выведет подробное описание для указанной команды"
+  en: "\t - Command \"{0}\" outputs in console the list of all available commands.
+  %n\t\tFormat:
+  %n\t\t\t - \"{0}\" (without parameters) – outputs the complete listof commands with detailed description
+  %n\t\t\t - \"{0} | list\" –output the list of available commands
+  %n\t\t\t - \"{0} | <command_name>\" - outputs the detailed description for specified command%n"
+#
+# ========================== common texts ==========================
+#
+greeting_text:
+  ru: "Привет! Это консольный клиент для работы с базами данных PostgreSQL.
+  %nВведи команду \"help\" (\"help | list\", \"help | <command>\") для ознакомления с возможностями приложения или обратись к оффициальной документации.%n"
+  en: "Hello! This is a console client to work with PostgreSQL database.
+  %nEnter command \"help\" (\"help | list\", \"help | <command>\") to learn more about the possibilities
+  of the application or refer to the official documentation.%n"
+
+bye_bye_text:
+  ru: "%nВыход из приложения..."
+  en: "%nApplication termination..."
+
+type_input:
+  ru: "%nВведи команду --->> "
+  en: "%nEnter command --->> "
+
+#
+# ========================== error texts ==========================
+#
+wrong_command_error:
+  ru: "%n\tКоманда \"{0}\" не найдена."
+  en: "%n\tCommand \"{0}\" not found."
+
+input_error:
+  ru: "%n\tОшибка запроса \"{0}\"."
+  en: "%n\tRequest error \"{0}\"."
+
+help_info_text:
+  ru: "%n\tВведи команду \"help\" для ознакомления с возможностями приложения или обратись к оффициальной документации."
+  en: "%n\tEnter command \"help\" to learn about thepossibilities of the application or refer to the official documentation."
+
+cmd_arg_error:
+  ru: "%n\tПараметр \"{0}\" не указан или задано пустое значение."
+  en: "%n\tParameter \"{0}\" is not specified or empty value is assigned."
+
+driver_load_error:
+  ru: "%n\tВо время загрузки драйвера произошла ошибка: {0}.%n"
+  en: "%n\tAn error {0} occurred while driver load.%n"
+
+connection_set_error:
+  ru: "%n\tНе удалось подключиться к базе данных. Проверь правильность введенных данных."
+  en: "%n\tConnection to database failed. Check correctness of entered data."
+
+connection_error:
+  ru: "%n\tПодключение к базе данных не установлено. Подключись к базе данных и повтори запрос."
+  en: "%n\tNot connected to database. Connect to database andrepeat request."
+
+connection_set:
+  ru: "%n\tСоединение с базой данных установлено.%n"
+  en: "%n\tConnected to database.%n"
+
+request_error:
+  ru: "%n\tВо время исполнения запроса {0} произошла ошибка."
+  en: "%n\tAn erroroccured while {0} request processing."
+
+table_doesnt_exist_error:
+  ru: "%n\tУказанная таблица не существует."
+  en: "%n\tRequired table doesn't exist."
+
+table_already_exists_error:
+  ru: "%n\tУказанная таблица уже существует."
+  en: "%n\tRequired table already exists."
+
+change_lang_error:
+  ru: "%n\tЯзык {0} не поддерживается или введено неверное значение%n"
+  en: "%n\tLanguage {0} is not supported%n"
+#
+# ========================== success texts ==========================
+#
+create_table_success:
+  ru: "%n\tТаблица {0} успешно создана.%n"
+  en: "%n\tTable {0} has been successfully created.%n"
+
+delete_row_success:
+  ru: "%n\tИз таблицы {0} было удалено строк: {1}.%n"
+  en: "%n\t{1} rows were deleted from {0} table%n"
+
+delete_row_success_zero:
+  ru: "%n\tВ таблице {0} нет записей, удовлетворяющих условию. Удалено строк: {1}.%n"
+  en: "%n\tNo records that satisfy a given condition in {0} table. Number of rows deleted: {1}%n"
+
+clear_table_success:
+  ru: "%n\tТаблица {0} очищена.%n"
+  en: "%n\tTable {0} truncated.%n"
+
+drop_table_success:
+  ru: "%n\tТаблица {0} удалена.%n"
+  en: "%n\tTable {0} deleted.%n"
+
+insert_table_success:
+  ru: "%n\tДанные успешно добавлены.%n"
+  en: "%n\tData is successfully added.%n"
+
+update_row_success:
+  ru: "%n\tДанные в таблице {0} успешно обновлены.%n"
+  en: "%n\tData in {0} is successfully updated%n"
+
+update_row_success_zero:
+  ru: "%n\tВ таблице {0} нет записей, удовлетворяющих условию.%n"
+  en: "%n\tNo records that satisfy a given condition in {0} table.%n"
+
+table_doesnt_exist_error:
+  ru: "%n\tТаблицы не сущестует.%n"
+  en: "%n\tTable doesn't exist.%n"
+
+table_already_exists_error:
+  ru: "%n\tТалица уже сущестует.%n"
+  en: "%n\tTable already exists.%n"
+
+language_changed_success:
+  ru: "%n\tЯзык интерфейса изменен на: {0}%n"
+  en: "%n\tInterface language is changed into: {0}%n"
+
