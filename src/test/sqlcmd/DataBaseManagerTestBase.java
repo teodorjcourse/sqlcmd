@@ -11,8 +11,9 @@ import java.util.Properties;
 
 @Ignore
 public class DataBaseManagerTestBase extends TestCase {
-	protected static final String TEST_DATABASE_NAME = "test_junit_auto";
-	protected static final String TEST_DATABASE_NAME_2 = "test_junit_auto_2";
+	// UNCOMMENT THIS OR SET DATABASE NAME VALUES
+	protected static final String TEST_DATABASE_NAME = //"test_junit_auto";
+	protected static final String TEST_DATABASE_NAME_2 = //"test_junit_auto_2";
 	protected static final String TEST_TABLE = "foo";
 
 	protected DataBaseManager dataBaseManager;
@@ -26,16 +27,16 @@ public class DataBaseManagerTestBase extends TestCase {
 		// SET THE PROPS OR UNCOMMENT CODE BELLOW TO RUN TESTS
 		// BE AWARE THAT DURING THIS TEST <TEST_DATABASE_NAME> and <TEST_DATABASE_NAME_2>
 		// WILL BE CREATED AND DELETED MULTIPLE TIMES !!!
-		// DO NOT UNCOMMENT CODE BELOW IF YOU DONT WONT THIS OPERATIONS TO BE EXECUTED !!!
+		// DO NOT UNCOMMENT CODE BELOW IF YOU DONT WANT THIS OPERATIONS TO BE EXECUTED !!!
 
-		Properties testDBProps = new Properties();
-
-		testDBProps.setProperty("jdbc.driver", "org.postgresql.Driver");
-		testDBProps.setProperty("jdbc.connection_string", "jdbc:postgresql://");
-		testDBProps.setProperty("jdbc.host", "localhost");
-		testDBProps.setProperty("jdbc.port", "5432");
-		testDBProps.setProperty("jdbc.username", "postgres");
-		testDBProps.setProperty("jdbc.password", "qwerty");
+//		Properties testDBProps = new Properties();
+//
+//		testDBProps.setProperty("jdbc.driver", "org.postgresql.Driver");
+//		testDBProps.setProperty("jdbc.connection_string", "jdbc:postgresql://");
+//		testDBProps.setProperty("jdbc.host", "localhost");
+//		testDBProps.setProperty("jdbc.port", "5432");
+//		testDBProps.setProperty("jdbc.username", "postgres");
+//		testDBProps.setProperty("jdbc.password", "qwerty");
 
 		testConfiguration = new Configuration(testDBProps);
 		dataBaseManager = new PostgreSQLManager(testConfiguration);
