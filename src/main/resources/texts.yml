@@ -293,3 +293,7 @@ language_changed_success:
   ru: "%n\tЯзык интерфейса изменен на: {0}%n"
   en: "%n\tInterface language is changed into: {0}%n"
 
+connection_closed:
+  ru: "%n\tСоединение закрыто%n"
+  en: "%n\tСonnection closed%n"
+
