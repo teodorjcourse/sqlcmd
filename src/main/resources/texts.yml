@@ -297,3 +297,7 @@ connection_closed:
   ru: "%n\tСоединение закрыто%n"
   en: "%n\tСonnection closed%n"
 
+empty_tables_text:
+  ru: "%n\tВ базе данных еще нет ни одной таблицы%n"
+  en: "%n\tThere are no tables in database%n"
+

@@ -67,4 +67,37 @@ public class GetTablesTest extends IntBase {
 			assertEquals(String.format(expectedMessages[index]), capturedArgs.get(index));
 		}
 	}
+
+	/**
+	 * Соединение установлено
+	 * Таблиц нет. Юзеру выводим сообщение, что таблиц нет
+	 */
+	public void testGetTablesDoesntExists() {
+		try {
+			prepareDatabase();
+			setConnection();
+		} catch (DataBaseRequestException e) {
+
+		}
+
+		final String[] inputs = {
+				"tables"
+		};
+
+		final String[] expectedMessages = {
+                Keys.EMPTY_TABLE_TEXT.toString()
+		};
+
+		for (String input : inputs) {
+			controller.onUserInput(input);
+		}
+
+		Mockito.verify(viewMock, Mockito.times(inputs.length)).render(argument.capture());
+
+		List<String> capturedArgs = argument.getAllValues();
+
+		for (int index = 0; index < inputs.length; index++) {
+			assertEquals(String.format(expectedMessages[index]), capturedArgs.get(index));
+		}
+	}
 }

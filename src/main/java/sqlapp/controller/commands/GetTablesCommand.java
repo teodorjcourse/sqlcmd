@@ -24,7 +24,12 @@ public class GetTablesCommand extends Command {
 		    throws DataBaseRequestException
     {
 		List<String> tablesNames = dataBaseManager.getTables();
-		responseModel().push(new ResponseData(tablesNames));
+
+		Object responseData = tablesNames.size() == 0 ?
+                AppConfig.translationBase.getTranslation(Keys.EMPTY_TABLE_TEXT.toString()) :
+                tablesNames;
+
+		responseModel().push(new ResponseData(responseData));
     }
 
 	@Override

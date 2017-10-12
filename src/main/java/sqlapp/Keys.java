@@ -55,7 +55,9 @@ public enum Keys {
 	INPUT("type_input"),
 
 	CONNECTION_SET("connection_set"),
-	CONNECTION_ALREADY_SET("connection_already_set");
+	CONNECTION_ALREADY_SET("connection_already_set"),
+
+	EMPTY_TABLE_TEXT("empty_tables_text");
 
 
 	private String key;
