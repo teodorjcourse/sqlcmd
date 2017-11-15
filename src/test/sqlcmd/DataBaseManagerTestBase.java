@@ -30,13 +30,13 @@ public class DataBaseManagerTestBase extends TestCase {
 		// DO NOT UNCOMMENT CODE BELOW IF YOU DONT WANT THIS OPERATIONS TO BE EXECUTED !!!
 
 //		Properties testDBProps = new Properties();
-//
-//		testDBProps.setProperty("jdbc.driver", "org.postgresql.Driver");
-//		testDBProps.setProperty("jdbc.connection_string", "jdbc:postgresql://");
-//		testDBProps.setProperty("jdbc.host", "localhost");
-//		testDBProps.setProperty("jdbc.port", "5432");
-//		testDBProps.setProperty("jdbc.username", "postgres");
-//		testDBProps.setProperty("jdbc.password", "qwerty");
+
+		testDBProps.setProperty("jdbc.driver", "org.postgresql.Driver");
+		testDBProps.setProperty("jdbc.connection_string", "jdbc:postgresql://");
+		testDBProps.setProperty("jdbc.host", "localhost");
+		testDBProps.setProperty("jdbc.port", "5432");
+		testDBProps.setProperty("jdbc.username", "postgres");
+		testDBProps.setProperty("jdbc.password", "qwerty");
 
 		testConfiguration = new Configuration(testDBProps);
 		dataBaseManager = new PostgreSQLManager(testConfiguration);

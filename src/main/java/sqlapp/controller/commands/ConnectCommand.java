@@ -6,8 +6,6 @@ import sqlapp.model.ResponseData;
 import sqlapp.model.exceptions.DataBaseRequestException;
 import sqlapp.model.managers.DataBaseManager;
 import sqlapp.model.ResponseModel;
-import sqlapp.utils.SplitedString;
-import sqlapp.utils.StringUtils;
 
 public class ConnectCommand extends Command {
 	DataBaseManager dataBaseManager;
@@ -39,18 +37,4 @@ public class ConnectCommand extends Command {
 	protected String descKey() {
 		return Keys.CONNECT_COMMAND_DESC.toString();
 	}
-
-//	@Override
-//	public String description() {
-//		SplitedString splited = SplitedString.split(format(), "\\|");
-//
-//		return StringUtils.substitute(
-//				AppConfig.translationBase.getTranslation(Keys.CONNECT_COMMAND_DESC.toString()),
-//				id(),
-//				format(),
-//				splited.get(1),
-//				splited.get(2),
-//				splited.get(3)
-//		);
-//	}
 }

@@ -8,7 +8,6 @@ import sqlapp.model.events.Events;
 import sqlapp.model.ResponseModel;
 import sqlapp.model.exceptions.DataBaseRequestException;
 import sqlapp.model.managers.DataBaseManager;
-import sqlapp.utils.StringUtils;
 
 public class ExitCommand extends Command {
 	DataBaseManager dataBaseManager;
@@ -40,10 +39,4 @@ public class ExitCommand extends Command {
 	protected String descKey() {
 		return Keys.EXIT_COMMAND_DESC.toString();
 	}
-
-//	@Override
-//	public String description() {
-//    	return StringUtils.
-//			    substitute(AppConfig.translationBase.getTranslation(Keys.EXIT_COMMAND_DESC.toString()), id(), id());
-//	}
 }

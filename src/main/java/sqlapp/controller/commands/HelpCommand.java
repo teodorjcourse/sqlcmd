@@ -1,10 +1,8 @@
 package sqlapp.controller.commands;
 
-import sqlapp.AppConfig;
 import sqlapp.Keys;
 import sqlapp.model.ResponseData;
 import sqlapp.model.ResponseModel;
-import sqlapp.utils.StringUtils;
 
 public class HelpCommand extends Command {
 
@@ -47,13 +45,4 @@ public class HelpCommand extends Command {
     protected String descKey() {
         return Keys.HELP_COMMAND_DESC.toString();
     }
-
-//    @Override
-//    public String description() {
-//        return StringUtils.substitute(
-//                AppConfig.translationBase.getTranslation(Keys.HELP_COMMAND_DESC.toString()),
-//                id(),
-//                format()
-//        );
-//    }
 }

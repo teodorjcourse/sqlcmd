@@ -6,7 +6,6 @@ import sqlapp.model.ResponseData;
 import sqlapp.model.exceptions.DataBaseRequestException;
 import sqlapp.model.managers.DataBaseManager;
 import sqlapp.model.ResponseModel;
-import sqlapp.utils.StringUtils;
 
 import java.util.List;
 
@@ -41,13 +40,4 @@ public class GetTablesCommand extends Command {
 	protected String descKey() {
 		return Keys.TABLES_COMMAND_DESC.toString();
 	}
-
-//	@Override
-//	public String description() {
-//		return StringUtils.substitute(
-//				AppConfig.translationBase.getTranslation(Keys.TABLES_COMMAND_DESC.toString()),
-//				id(),
-//				id()
-//		);
-//	}
 }

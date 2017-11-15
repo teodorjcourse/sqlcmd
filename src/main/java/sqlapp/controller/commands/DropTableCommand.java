@@ -6,7 +6,6 @@ import sqlapp.model.ResponseModel;
 import sqlapp.model.ResponseData;
 import sqlapp.model.exceptions.DataBaseRequestException;
 import sqlapp.model.managers.DataBaseManager;
-import sqlapp.utils.SplitedString;
 import sqlapp.utils.StringUtils;
 
 public class DropTableCommand extends Command {
@@ -42,16 +41,4 @@ public class DropTableCommand extends Command {
 	protected String descKey() {
 		return Keys.DROP_COMMAND_DESC.toString();
 	}
-
-//	@Override
-//	public String description() {
-//		SplitedString splited = SplitedString.split(format(), "\\|");
-//
-//		return StringUtils.substitute(
-//				AppConfig.translationBase.getTranslation(Keys.DROP_COMMAND_DESC.toString()),
-//				id(),
-//				format(),
-//				splited.get(1)
-//		);
-//	}
 }

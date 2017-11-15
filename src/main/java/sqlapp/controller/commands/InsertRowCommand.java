@@ -6,7 +6,6 @@ import sqlapp.model.ResponseData;
 import sqlapp.model.ResponseModel;
 import sqlapp.model.exceptions.DataBaseRequestException;
 import sqlapp.model.managers.DataBaseManager;
-import sqlapp.utils.SplitedString;
 import sqlapp.utils.StringUtils;
 import java.util.Arrays;
 
@@ -43,19 +42,4 @@ public class InsertRowCommand extends Command {
 	protected String descKey() {
 		return Keys.INSERT_COMMAND_DESC.toString();
 	}
-
-//	@Override
-//	public String description() {
-//		SplitedString splited = SplitedString.split(format(), "\\|");
-//
-//		String[] args = new String[splited.all().length + 1];
-//		args[0] = id();
-//		args[1] = format();
-//		System.arraycopy(splited.all(), 1, args, 2, splited.all().length - 1);
-//
-//		return StringUtils.substitute(
-//				AppConfig.translationBase.getTranslation(Keys.INSERT_COMMAND_DESC.toString()),
-//				args
-//		);
-//	}
 }
